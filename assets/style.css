@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+footer{
+    background-color: black;
+    height: 70px;
+    width: 100vw;
+}
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #990011;
+}
+
+.menu li {
+    margin: auto;
+    padding: 0;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff; 
+    text-decoration: none; 
+    width: 100%;
+    text-align-last: center;
+}
+.menu li a:hover {
+    background-color: gray;
+    color: red;
+}
+.bi-list:hover{
+    fill: red;
+}
+.bruce-banner{
+    width: 100vw;
+    height: 80vh;
+    background-color: #321;
+}
+.menu-item{
+    display: none;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre los elementos */
+    padding: 10px;
+    background-color: #7ACC00;
+}
+
+.product-box {
+    width: calc(50% - 10px);
+    background-color: gray;
+    border: 2px solid black;
+    padding: 20px;
+    box-sizing: border-box;
+    border-width: 10px;
+    height: 297px;
+}

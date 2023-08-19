@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    width: 1080px;
+    margin: 0 auto;
+}
+footer{
+    background-color: black;
+    height: 70px;
+    width: 1080px;
+}
+p#valid-css-icon-container {
+    float: right;
+    position: relative;
+    top: 20px;
+    right: 20px;
+}
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #990011;
+}
+.menu li {
+    margin: auto;
+    padding: 0;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff; 
+    text-decoration: none; 
+    width: 1040px;
+    text-align-last: center;
+}
+.menu li a:hover {
+    background-color: gray;
+    color: red;
+}
+.bi-list:hover{ /* Imagen menu hamburguesa */
+    fill: red;
+}
+.menu-item{
+    display: none;
+}
+

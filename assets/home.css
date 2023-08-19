@@ -1,0 +1,31 @@
+.bruce-banner{
+    width: 1080px;
+    height: 530px;
+    background-color: #321;
+}
+.categories,.products {
+    padding: 10px;
+    background-color: #7ACC00;
+}
+
+.category-box ,.product-box {
+    /* PREGUNTAR SI SE PUEDE USAR BOX SIZING!! */ 
+    /* ojo que con 3 cuadrados por ancho, queda fachero*/
+    /*box-sizing: border-box;*/ 
+
+    /*box-sizing: content-box;*/ /*default*/
+    background-color: gray;
+    border: 2px solid black;
+    padding: 20px;
+    border-width: 10px;
+    height: 297px;
+}
+.category-box{
+    display: inline-block;
+    width: 458px;
+    margin: 5px;
+}
+.product-box{
+    width: 990px;
+    margin: auto auto 30px auto;
+}

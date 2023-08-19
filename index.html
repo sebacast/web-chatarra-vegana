@@ -1,78 +1,98 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Chatarra Vegana</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <ul class="menu">
-                <li >
-                    <img src="img/test-logo.png" alt="Logo-Chatarra-Vegana" width="150">
-                </li>
-                <li class="menu-item">
-                    <a href="">Inicio</a>
-                </li>
-                <li class="menu-item">
-                    <a href="">Novedades</a>
-                </li>
-                <li class="menu-item">
-                    <a href="">Promociones</a>
-                </li>
-                <li class="menu-item">
-                    <a href="">Sobre nostros</a>
-                </li>
-                <li class="menu-item">
-                    <a href="">Testimonios</a>
-                </li>
-                <li class="menu-h">
-                    <a id="menu-header-h" href="">
-                        <svg class="bi-list" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-list" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                          </svg>    
-                    </a>
-                    
-                </li>
-                
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="bruce-banner">
-    
-        </section>
-        <section class="products">
-            <div 
-            class="product-box"
-            data-category="papas"
-            ></div>
-            <div 
-            class="product-box"
-            data-category="pos"
-            ></div>
-            <div 
-            class="product-box"
-            data-category=""
-            ></div>
-            <div 
-            class="product-box"
-            data-category=""
-            ></div>
-            <div 
-            class="product-box"
-            data-category=""
-            ></div>
-            <div 
-            class="product-box"
-            data-category=""
-            ></div>
-        </section>
-    </main>
-    <footer>
 
-    </footer>
+<body>
+    <div id="container">
+        <header>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <img src="img/test-logo.png" alt="Logo-Chatarra-Vegana" width="150">
+                    </li>
+                    <li class="menu-item">
+                        <a href="#home">Inicio</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">Novedades</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">Promociones</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">Sobre nostros</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">Testimonios</a>
+                    </li>
+                    <li class="menu-h">
+                        <a id="menu-header-h" href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
+                                class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                            </svg>
+                        </a>
+
+                    </li>
+
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="home">
+                <div class="bruce-banner">
+
+                </div>
+                <h2>Categorías</h2>
+                <div class="categories">
+                    <div class="category-box" data-category="papas" onclick="handleCategoryBoxClick(this)"></div>
+                    <div class="category-box" data-category="pos"></div>
+                    <div class="category-box" data-category=""></div>
+                    <div class="category-box" data-category=""></div>
+                    <div class="category-box" data-category=""></div>
+                    <div class="category-box" data-category=""></div>
+                </div>
+
+                <div class="products">
+                    <div class="product-box" data-product="papas">
+                        Paras rústicas
+                    </div>
+                    <div class="product-box" data-product="pos">
+                        Papas con chedar</div>
+                    <div class="product-box" data-product=""></div>
+                    <div class="product-box" data-product="">Más papas</div>
+                    <div class="product-box" data-product="">Mucha más papa</div>
+
+                    <div class="product-box" data-product="papas">
+                        Postre 1
+                    </div>
+                    <div class="product-box" data-product="pos">
+                        Postre 2</div>
+                    <div class="product-box" data-product=""></div>
+                    <div class="product-box" data-product="">Postre 3</div>
+                    <div class="product-box" data-product="">Postre 4</div>
+                </div>
+            </section>
+
+        </main>
+        <footer>
+            <p id="valid-css-icon-container">
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px"
+                        src="http://jigsaw.w3.org/css-validator/images/vcss"
+                        alt="¡CSS Válido!" >
+                </a>
+            </p>
+        </footer>
+    </div>
     <script src="assets/menu.js"></script>
+    <script src="assets/category_selector.js"></script>
 </body>
+
 </html>

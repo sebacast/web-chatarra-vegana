@@ -1,13 +1,11 @@
-const menuButton = document.getElementById('menu-header-h');
-menuButton.addEventListener('click', function(e) {
-  e.preventDefault();
-  let menuItems = document.querySelectorAll(".menu-item");
-  menuItems.forEach((item) => {
-    if(!item.style.display || item.style.display == "none"){
-        item.style.display = "block"; 
-    }
-    else{
-        item.style.display = "none"; 
-    }
-  });
+function handleCategoryBoxClick(e) {
+    const clickedBox = e.target;
+    clickedBox.style.borderColor = "red";
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    const categoryBoxes = document.querySelectorAll(".category-box");
+    categoryBoxes.forEach(function(box) {
+        box.addEventListener("click", handleCategoryBoxClick);
+    });
 });

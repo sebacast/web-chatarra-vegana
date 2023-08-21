@@ -22,6 +22,7 @@ p#valid-css-icon-container {
     margin: 0;
     padding: 0;
     background-color: #990011;
+    height: 60px;
 }
 .menu li {
     margin: auto;
@@ -37,13 +38,32 @@ p#valid-css-icon-container {
     text-align-last: center;
 }
 .menu li a:hover {
-    background-color: gray;
     color: red;
 }
-.bi-list:hover{ /* Imagen menu hamburguesa */
-    fill: red;
+#menu-h{/* etiqueta li contenedora del menu hamburguesa */
+    height: 60px;
+}
+.menu-h-image{ /* Imagen menu hamburguesa */
+    float: right;
+}
+.menu-h-image:hover{
+    fill: red; /* Color de imagen svg*/
 }
 .menu-item{
     display: none;
+    position: relative;
+    background-color: green;
+}
+.menu-item:hover{
+    background-color: gray;   
+}
+#logo{
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    font-size: 0;
+    margin: 0 0 0 20px;
+    width: 150px;
+    height: 68px;
+    float: left;
 }
 

@@ -10,7 +10,7 @@
 
 .category-box ,.product-box {
     /* PREGUNTAR SI SE PUEDE USAR BOX SIZING!! */ 
-    /* ojo que con 3 cuadrados por ancho, queda fachero*/
+    /* Hojaaldre con los  3 cuadrados por ancho, queda facherisimo*/
     /*box-sizing: border-box;*/ 
 
     /*box-sizing: content-box;*/ /*default*/

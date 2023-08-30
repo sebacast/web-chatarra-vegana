@@ -12,12 +12,13 @@
     <div id="container">
         <header>
             <nav>
-                <ul class="menu">
+                <ul id="menu">
                     <li id="menu-item-logo">
                         <h1 id="logo">Chatarra Vegana</h1>
                     </li>
                     <li id="menu-h">
-                        <a id="menu-header-h" href="">
+                        <a id="menu-header-h" href="javascript:void(0);">
+                            <!-- imagen menu hamburguesa en svg -->
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
                                 class="bi menu-h-image" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
@@ -27,19 +28,19 @@
 
                     </li>
                     <li class="menu-item">
-                        <a href="#home">Inicio</a>
+                        <a href="#inicio">Inicio</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#news">Novedades</a>
+                        <a href="#novedades">Novedades</a>
                     </li>
                     <li class="menu-item">
-                        <a href="">Promociones</a>
+                        <a href="#promociones">Promociones</a>
                     </li>
                     <li class="menu-item">
-                        <a href="">Sobre nostros</a>
+                        <a href="#sobre-nosotros">Sobre nostros</a>
                     </li>
                     <li class="menu-item">
-                        <a href="">Testimonios</a>
+                        <a href="#testimonios">Testimonios</a>
                     </li>
                 </ul>
             </nav>
@@ -79,10 +80,27 @@
                     <div class="product-box" data-product="">Postre 4</div>
                 </div>
             </section>
-            <section id="news">
+            <section id="novedades">
                 <h2>Novedades</h2>
             </section>
+            <section id="promociones">
+                <h2>Promociones</h2>
+            </section>
+            <section id="sobre-nosotros">
+                <h2>Sobre nosotros</h2>
+            </section>
+            <section id="testimonios">
+                <h2>Testimonios</h2>
+            </section>
 
+            <a
+            id="go-up-button" 
+            href="#">
+                <!-- imagen flecha arriba para subir -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+                </svg>
+            </a>
         </main>
         <footer>
             <p id="valid-css-icon-container">
@@ -94,8 +112,8 @@
             </p>
         </footer>
     </div>
-    <script src="assets/menu.js"></script>
-    <script src="assets/category_selector.js"></script>
+    <script src="assets/scripts/menu.js"></script>
+    <script src="assets/scripts/category_selector.js"></script>
 </body>
 
 </html>

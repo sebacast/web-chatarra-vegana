@@ -67,7 +67,7 @@ p#valid-css-icon-container {
     background-color: gray;   
 }
 #logo{
-    background-image: url(global-img/logo.png);
+    background-image: url(img/logo.png);
     background-repeat: no-repeat;
     font-size: 0;
     margin: 0 0 0 20px;

@@ -2,6 +2,15 @@
     margin: 0;
     padding: 0;
 }
+@font-face {
+    font-family: 'Montserrat'; /* Nombre que le das a la fuente */
+    src: url('assets/fonts/myfont.ttf') format('ttf'); /* Ruta de la fuente y formato */
+  }
+  
+body{
+    font-family: Montserrat;
+    background-color: aliceblue;
+}
 #container{
     width: 1080px;
     margin: 0 auto;
@@ -17,19 +26,19 @@ p#valid-css-icon-container {
     top: 20px;
     right: 20px;
 }
-.menu {
+#menu {
     list-style: none;
     margin: 0;
     padding: 0;
     background-color: #990011;
     height: 60px;
 }
-.menu li {
+#menu li {
     margin: auto;
     padding: 0;
 }
 
-.menu li a {
+#menu li a {
     display: block;
     padding: 10px 20px;
     color: #fff; 
@@ -37,7 +46,7 @@ p#valid-css-icon-container {
     width: 1040px;
     text-align-last: center;
 }
-.menu li a:hover {
+#menu li a:hover {
     color: red;
 }
 #menu-h{/* etiqueta li contenedora del menu hamburguesa */
@@ -66,4 +75,42 @@ p#valid-css-icon-container {
     height: 68px;
     float: left;
 }
+#go-up-button{
+    position: fixed;
+    bottom: 70px;
+    right: 7%;
+}
 
+
+/*
+HOME
+ */
+.bruce-banner{
+    width: 1080px;
+    height: 530px;
+    background-color: #321;
+}
+.categories,.products {
+    padding: 10px;
+    background-color: #7ACC00;
+}
+
+.category-box ,.product-box {
+    background-color: gray;
+    border: 2px solid black;
+    padding: 20px;
+    border-width: 10px;
+    height: 297px;
+}
+.category-box{
+    display: inline-block;
+    width: 457px;
+    margin: 5px;
+}
+.product-box{
+    width: 990px;
+    margin: auto auto 30px auto;
+}
+/*
+FIN HOME
+ */

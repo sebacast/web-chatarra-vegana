@@ -1,3 +1,4 @@
+/* global sites styles */
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +7,7 @@
     font-family: 'Montserrat'; /* Nombre que le das a la fuente */
     src: url('assets/fonts/myfont.ttf') format('ttf'); /* Ruta de la fuente y formato */
   }
-  
+
 body{
     font-family: Montserrat;
     background-color: aliceblue;
@@ -80,22 +81,20 @@ p#valid-css-icon-container {
     bottom: 70px;
     right: 7%;
 }
+/* global sites styles */
 
-
-/*
-HOME
- */
+/* section styles */
 .bruce-banner{
     width: 1080px;
     height: 530px;
     background-color: #321;
 }
-.categories,.products {
+.categories,.products,.news {
     padding: 10px;
     background-color: #7ACC00;
 }
 
-.category-box ,.product-box {
+.category-box ,.product-box, .new-box {
     background-color: gray;
     border: 2px solid black;
     padding: 20px;
@@ -107,10 +106,10 @@ HOME
     width: 457px;
     margin: 5px;
 }
-.product-box{
+.product-box, .new-box{
     width: 990px;
     margin: auto auto 30px auto;
 }
-/*
-FIN HOME
- */
+/* global sites styles */
+/*  element styles  */
+

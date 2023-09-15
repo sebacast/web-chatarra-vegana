@@ -112,8 +112,9 @@ p#valid-css-icon-container {
 }
 #sobre-nosotros {
     margin: 0 auto;
-    padding: 20px;
+    padding: 0px 20px 20px 20px;
     background-color: #7ACC00;
+    border: 15px solid;
 }
 
 #sobre-nosotros h3, #contact-form {

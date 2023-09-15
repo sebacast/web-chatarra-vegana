@@ -120,6 +120,12 @@ p#valid-css-icon-container {
 #sobre-nosotros h3, #contact-form {
     margin-top: 20px;
 }
+#promociones{
+    background-color: black;
+    margin-top: -20px;
+    padding-top: 5px;
+    color: white;
+}
 h2{
     margin: 20px auto;
     text-align: center;

@@ -117,6 +117,7 @@ p#valid-css-icon-container {
     background-color: #7ACC00;
     border: 15px solid;
     color: black;
+    border-radius: 40px;
 }
 
 #sobre-nosotros h3, #contact-form {

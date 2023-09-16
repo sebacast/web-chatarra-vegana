@@ -13,6 +13,9 @@ body{
     background-color: black;
     color: white;
 }
+h2{
+    text-align: center;
+}
 #container{
     width: 1080px;
     margin: 0 auto;
@@ -102,9 +105,10 @@ p#valid-css-icon-container {
     border-width: 10px;
     height: 297px;
 }
+
 .category-box{
     display: inline-block;
-    width: 457px;
+    width: 280px;
     margin: 5px;
 }
 .product-box, .new-box{
@@ -118,18 +122,8 @@ p#valid-css-icon-container {
     border-radius: 20px;
 }
 
-#sobre-nosotros h3, #contact-form {
+#sobre-nosotros h3 {
     margin-top: 20px;
-}
-#promociones{
-    background-color: black;
-    margin-top: -20px;
-    padding-top: 5px;
-    color: white;
-}
-h2{
-    margin: 20px auto;
-    text-align: center;
 }
 
 #contact-form fieldset {
@@ -199,6 +193,16 @@ h2{
 #contacto {
     width: 1080px;
 }
+#home {
+    border-bottom: 20px solid;
+    border-color: #7acc00;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.title{
+    height: 30px;
+    padding: 20px;
+}
 /* global sites styles */
 
 /*  element styles  */
@@ -208,11 +212,23 @@ h2{
 .bg-greenyellow{
     background-color: greenyellow;
 }
+.bg-green{
+    background-color: green;
+}
 .bg-red{
     background-color: red;
 }
+.bg-rebeccapurple{
+    background-color: rebeccapurple;
+}
 .text-decoration-none{
     text-decoration: none;
+}
+.mt-50{
+    margin-top: 50px;
+}
+.mt-100{
+    margin-top: 100px;
 }
 /*  element styles  */
 

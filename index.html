@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <title>Chatarra Vegana</title>
     <link rel="stylesheet" href="assets/styles.css">
-    <link rel="stylesheet" href="assets/home.css">
 </head>
 
 <body>
@@ -40,7 +39,7 @@
                         <a href="#sobre-nosotros">Sobre nosotros</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#contacto">contacto</a>
+                        <a href="#contacto">Contacto</a>
                     </li>
                 </ul>
             </nav>
@@ -50,13 +49,10 @@
                 <div class="bruce-banner">
 
                 </div>
-                <h2>Categorías</h2>
+                <h2 class="title bg-red">Menú</h2>
                 <div class="categories">
                     <div class="category-box" data-category="papas" onclick="handleCategoryBoxClick(this)"></div>
                     <div class="category-box" data-category="pos"></div>
-                    <div class="category-box" data-category=""></div>
-                    <div class="category-box" data-category=""></div>
-                    <div class="category-box" data-category=""></div>
                     <div class="category-box" data-category=""></div>
                 </div>
 
@@ -80,8 +76,8 @@
                     <div class="product-box" data-product="">Postre 4</div>
                 </div>
             </section>
-            <section id="novedades">
-                <h2>Novedades</h2>
+            <section id="novedades" class="mt-50">
+                <h2 class="title bg-red">Novedades</h2>
                 <div class="news">
                     <div class="new-box">a</div>
                     <div class="new-box">a</div>
@@ -89,8 +85,8 @@
                     <div class="new-box">a</div>
                 </div>
             </section>
-            <section id="promociones">
-                <h2>Promociones</h2>
+            <section id="promociones" class="mt-50">
+                <h2 class="title bg-red">Promociones</h2>
                 <div class="slideshow-container">
             
                     <div class="mySlides fade">
@@ -102,14 +98,14 @@
             
                     <div class="mySlides fade">
                         <div class="numbertext">2 / 3</div>
-                        <div class="inner-promo-slider-container bg-greenyellow"></div>
+                        <div class="inner-promo-slider-container bg-green"></div>
                         <!-- <img src="img_snow_wide.jpg" style="width:100%"> -->
                         <div class="text">Promo 2</div>
                     </div>
             
                     <div class="mySlides fade">
                         <div class="numbertext">3 / 3</div>
-                        <div class="inner-promo-slider-container bg-red"></div>
+                        <div class="inner-promo-slider-container bg-rebeccapurple"></div>
                         <!-- <img src="img_mountains_wide.jpg" style="width:100%"> -->
                         <div class="text">Promo 3</div>
                     </div>
@@ -123,8 +119,8 @@
                     <span class="dot"></span>
                 </div>
             </section>
-            <section id="sobre-nosotros">
-                <h2>Sobre nosotros</h2>
+            <section id="sobre-nosotros" class="mt-50">
+                <h2 class="title">Sobre nosotros</h2>
                 <p>Somos Chatarra Vegana, un restaurante que rompe con la idea tradicional de la comida vegana. Nos enorgullece ofrecer una experiencia culinaria única, donde lo vegano se encuentra con lo indulgente.</p>
 
                 <h3>Visión</h3>
@@ -151,8 +147,8 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.9176942753415!2d-58.44421902545868!3d-34.631520158964896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca35bd4e69fb%3A0x6a15e8de000e76a8!2sEmilio%20Mitre%20900%2C%20C1424%20AYR%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1694819292834!5m2!1ses-419!2sar" width="1030" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </section>
-            <section id="contacto">
-                <h2>Contacto</h2>
+            <section id="contacto" class="mt-50">
+                <h2 class="title">Contacto</h2>
                 <form id="contact-form" method="POST" action="mailto:contacto@chatarravegana.com">
                     <fieldset>
                         <legend>Contactanos</legend>
@@ -205,7 +201,7 @@
                 </svg>
             </a>
         </main>
-        <footer>
+        <footer class="mt-100">
             <p id="valid-css-icon-container">
                 <a href="http://jigsaw.w3.org/css-validator/check/referer">
                     <img style="border:0;width:88px;height:31px"
@@ -218,6 +214,7 @@
             </p>
         </footer>
     </div>
+    <script src="assets/scripts/jquery-3.7.1.min.js"></script>
     <script src="assets/scripts/menu.js"></script>
     <script src="assets/scripts/category_selector.js"></script>
     <script src="assets/scripts/slider.js"></script>

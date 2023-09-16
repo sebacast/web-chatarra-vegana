@@ -18,7 +18,7 @@ body{
     margin: 0 auto;
 }
 footer{
-    background-color: black;
+    background-color: #990011;
     height: 70px;
     width: 1080px;
 }
@@ -112,12 +112,10 @@ p#valid-css-icon-container {
     margin: auto auto 30px auto;
 }
 #sobre-nosotros {
-    margin: 0 auto;
-    padding: 0px 20px 20px 20px;
+    padding: 5px 25px 15px 25px;
     background-color: #7ACC00;
-    border: 15px solid;
     color: black;
-    border-radius: 40px;
+    border-radius: 20px;
 }
 
 #sobre-nosotros h3, #contact-form {
@@ -191,6 +189,16 @@ h2{
     background-color: red;
     text-decoration: none;
 }
+#map-container{
+    margin: 15px auto;  
+}
+#contact-address a {
+    text-decoration: none;
+    color: black;
+}
+#contacto {
+    width: 1080px;
+}
 /* global sites styles */
 
 /*  element styles  */
@@ -203,6 +211,9 @@ h2{
 .bg-red{
     background-color: red;
 }
+.text-decoration-none{
+    text-decoration: none;
+}
 /*  element styles  */
 
 /* Slider */
@@ -211,7 +222,7 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 1080px;
   position: relative;
   margin: auto;
 }

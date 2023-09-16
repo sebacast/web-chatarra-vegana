@@ -1,5 +1,4 @@
 $(function() {
-
   //evento click en menu hamburguesa
   $(document).on('click', '#menu-header-h', function() {
     hideShowMenuItems();

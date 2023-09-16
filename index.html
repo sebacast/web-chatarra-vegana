@@ -10,13 +10,13 @@
 <body>
     <div id="container">
         <header>
-            <nav>
-                <ul id="menu">
+            <nav id="nav-menu-sticky">
+                <ul id="menu" class="bg-red">
                     <li id="menu-item-logo">
                         <h1 id="logo">Chatarra Vegana</h1>
                     </li>
                     <li id="menu-h">
-                        <a id="menu-header-h" href="javascript:void(0);">
+                        <a id="menu-header-h" href="#">
                             <!-- imagen menu hamburguesa en svg -->
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
                                 class="bi menu-h-image" viewBox="0 0 16 16">
@@ -45,40 +45,67 @@
             </nav>
         </header>
         <main>
-            <section id="home">
-                <div class="bruce-banner">
+            <section id="inicio">
+                <div id="bruce-banner" class="background-image">
+                        <div >
+                          <a class="text-decoration-none text-white" href="https://wa.me/5491168874965?text=Hola,%20quiero%20hacer%20un%20pedido">
+                            <h1>¡Haz tu pedido!</h1>
+                            <p>Envianos un whatsapp</p>
+                          </a>
+                          <a 
+                          id="whatsapp-button"
+                          href="https://wa.me/5491168874965?text=Hola,%20quiero%20hacer%20un%20pedido" 
+                          target="_blank"
+                          >
+                            <img src="assets/img/whatsapp-icon.png" alt="whatsapp">
+                          </a>
+                        </div>
 
                 </div>
                 <h2 class="title bg-red">Menú</h2>
-                <div class="categories">
-                    <div class="category-box" data-category="papas" onclick="handleCategoryBoxClick(this)"></div>
-                    <div class="category-box" data-category="pos"></div>
-                    <div class="category-box" data-category=""></div>
+                <div class="box-container">
+                    <div id="salty" class="category-box background-image" data-category="salty">
+                        <div class="category-text-container">
+                            <h3>Salado</h3>
+                        </div>
+                    </div>
+                    <div id="sweet" class="category-box" data-category="sweet">
+                        <div class="category-text-container">
+                            <h3>Dulce</h3>
+                        </div>
+                    </div>
+                    <div id="drink" class="category-box" data-category="drink">
+                        <div class="category-text-container">
+                            <h3>Bebida</h3>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="products">
-                    <div class="product-box" data-product="papas">
-                        Paras rústicas
+                <div class="box-container">
+                    <div class="product-box" data-category="salty">
+                        Papas Rústicas
                     </div>
-                    <div class="product-box" data-product="pos">
-                        Papas con chedar</div>
-                    <div class="product-box" data-product=""></div>
-                    <div class="product-box" data-product="">Más papas</div>
-                    <div class="product-box" data-product="">Mucha más papa</div>
+                    <div class="product-box" data-category="salty">
+                        Papas Con Chedar
+                    </div>
 
-                    <div class="product-box" data-product="papas">
-                        Postre 1
+                    <div class="product-box" data-category="sweet">
+                        Torta Oreo
                     </div>
-                    <div class="product-box" data-product="pos">
-                        Postre 2</div>
-                    <div class="product-box" data-product=""></div>
-                    <div class="product-box" data-product="">Postre 3</div>
-                    <div class="product-box" data-product="">Postre 4</div>
+                    <div class="product-box" data-category="sweet">
+                        Green Cake
+                    </div>
+                    <div class="product-box" data-category="drink">
+                        Coca-Cola
+                    </div>
+                    <div class="product-box" data-category="drink">
+                        Jugo Natural De Mandarina
+                    </div>
                 </div>
             </section>
             <section id="novedades" class="mt-50">
-                <h2 class="title bg-red">Novedades</h2>
-                <div class="news">
+                <h2 class="title bg-orange">Novedades</h2>
+                <div class="box-container">
                     <div class="new-box">a</div>
                     <div class="new-box">a</div>
                     <div class="new-box">a</div>
@@ -86,7 +113,7 @@
                 </div>
             </section>
             <section id="promociones" class="mt-50">
-                <h2 class="title bg-red">Promociones</h2>
+                <h2 class="title bg-orange">Promociones</h2>
                 <div class="slideshow-container">
             
                     <div class="mySlides fade">
@@ -194,7 +221,7 @@
 
             <a
             id="go-up-button" 
-            href="#">
+            href="#inicio">
                 <!-- imagen flecha arriba para subir -->
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
                     <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>

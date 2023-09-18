@@ -26,7 +26,7 @@
                         </a>
 
                     </li>
-                    <li class="menu-item">
+                    <li class="menu-item border-top-white-1">
                         <a href="#inicio">Inicio</a>
                     </li>
                     <li class="menu-item">
@@ -45,7 +45,10 @@
             </nav>
         </header>
         <main>
-            <section id="inicio">
+            <section 
+            id="inicio" 
+            class="bg-red border-radius-bottom border-bottom-red"
+            >
                 <div id="bruce-banner" class="background-image">
                         <div >
                           <a class="text-decoration-none text-white" href="https://wa.me/5491168874965?text=Hola,%20quiero%20hacer%20un%20pedido">
@@ -62,28 +65,32 @@
                         </div>
 
                 </div>
-                <h2 class="title bg-red">Menú</h2>
-                <div class="box-container">
-                    <div id="salty" class="category-box background-image" data-category="salty">
-                        <div class="category-text-container">
-                            <h3>Salado</h3>
-                        </div>
+                <h2 class="title">Nuestra carta</h2>
+                <div class="box-container text-center">
+                    <div class="category-box-container">
+                        <a href="#" id="salty" class="category-box background-image" data-category="salty">
+                        </a>
+                        <h3 class="category-text-container">Salado</h3>
                     </div>
-                    <div id="sweet" class="category-box" data-category="sweet">
-                        <div class="category-text-container">
-                            <h3>Dulce</h3>
-                        </div>
+                    <div class="category-box-container">
+                        <a href="#" id="sweet" class="category-box" data-category="sweet">
+                        </a>
+                        <h3 class="category-text-container">Dulce</h3>
                     </div>
-                    <div id="drink" class="category-box" data-category="drink">
-                        <div class="category-text-container">
-                            <h3>Bebida</h3>
-                        </div>
+                    <div class="category-box-container">
+                        <a href="#" id="drink" class="category-box" data-category="drink">
+                        </a>
+                        <h3 class="category-text-container">Bebida</h3>
                     </div>
                 </div>
 
-                <div class="box-container">
-                    <div class="product-box" data-category="salty">
-                        Papas Rústicas
+                <div class="box-container text-center">
+                    <div 
+                    id="veggie-burger"
+                    class="product-box" 
+                    data-category="salty"
+                    >
+                        Veggie Burger
                     </div>
                     <div class="product-box" data-category="salty">
                         Papas Con Chedar
@@ -103,8 +110,11 @@
                     </div>
                 </div>
             </section>
-            <section id="novedades" class="mt-50">
-                <h2 class="title bg-orange">Novedades</h2>
+            <section 
+            id="novedades" 
+            class="mt-100 bg-orange border-radius-bottom border-bottom-orange"
+            >
+                <h2 class="title">Novedades</h2>
                 <div class="box-container">
                     <div class="new-box">a</div>
                     <div class="new-box">a</div>
@@ -112,7 +122,7 @@
                     <div class="new-box">a</div>
                 </div>
             </section>
-            <section id="promociones" class="mt-50">
+            <section id="promociones" class="mt-100">
                 <h2 class="title bg-orange">Promociones</h2>
                 <div class="slideshow-container">
             
@@ -146,7 +156,10 @@
                     <span class="dot"></span>
                 </div>
             </section>
-            <section id="sobre-nosotros" class="mt-50">
+            <section 
+            id="sobre-nosotros" 
+            class="mt-100 bg-lemon text-black border-radius-bottom border-bottom-lemon"
+            >
                 <h2 class="title">Sobre nosotros</h2>
                 <p>Somos Chatarra Vegana, un restaurante que rompe con la idea tradicional de la comida vegana. Nos enorgullece ofrecer una experiencia culinaria única, donde lo vegano se encuentra con lo indulgente.</p>
 
@@ -174,7 +187,7 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.9176942753415!2d-58.44421902545868!3d-34.631520158964896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca35bd4e69fb%3A0x6a15e8de000e76a8!2sEmilio%20Mitre%20900%2C%20C1424%20AYR%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1694819292834!5m2!1ses-419!2sar" width="1030" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </section>
-            <section id="contacto" class="mt-50">
+            <section id="contacto" class="mt-100">
                 <h2 class="title">Contacto</h2>
                 <form id="contact-form" method="POST" action="mailto:contacto@chatarravegana.com">
                     <fieldset>
@@ -228,16 +241,19 @@
                 </svg>
             </a>
         </main>
-        <footer class="mt-100">
+        <footer class="mt-100 bg-red border-radius-top border-top-red">
             <p id="valid-css-icon-container">
                 <a href="http://jigsaw.w3.org/css-validator/check/referer">
                     <img style="border:0;width:88px;height:31px"
-                        src="http://jigsaw.w3.org/css-validator/images/vcss"
+                        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
                         alt="¡CSS Válido!" >
                 </a>
             </p>
-            <p id="wireframe-button-container">
-                <a href="https://padlet.com/sebacastriv/comida-vegana-sabores-disidentes-mwrwz9um1aqbmwus" target="_blank">Wireframe</a>
+            <p class="footer-button-container">
+                <a href="https://github.com/sebacast/web-chatarra-vegana" target="_blank">Ver código en github</a>
+            </p>
+            <p class="footer-button-container">
+                <a href="https://padlet.com/sebacastriv/comida-vegana-sabores-disidentes-mwrwz9um1aqbmwus" target="_blank">Visitar wireframe</a>
             </p>
         </footer>
     </div>
@@ -245,6 +261,7 @@
     <script src="assets/scripts/menu.js"></script>
     <script src="assets/scripts/category_selector.js"></script>
     <script src="assets/scripts/slider.js"></script>
+    <script src="assets/scripts/go_up_button.js"></script>
 </body>
 
 </html>

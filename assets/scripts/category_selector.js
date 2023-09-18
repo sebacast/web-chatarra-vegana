@@ -4,23 +4,40 @@ $(function() {
     $(document).on('click', '.category-box', function(e) {
         e.preventDefault();
         let element = $(this);
-        let category = element.attr('data-category');
-        if (typeof category === "string" && category!== '') {
-            let index = categoriesArray.indexOf(category);
-            // Si la categoría no está en el array, la agregamos
-            if (index === -1) {
-              categoriesArray.push(category);
-              element.css("border-color", "red");
-            } 
-            // Si la categoría ya está en el array, la quitamos
-            else {
-              categoriesArray.splice(index, 1);
-              element.css("border-color", "black");
-            }
-        }
+        categoriesArray = categoryBoxClickHandler(categoriesArray,element);
         filterProducts(categoriesArray);
     });
+    $(document).on('click', '.category-text-container', function(e) {
+        e.preventDefault();
+        let element = $(this).prev(".category-box");
+        categoriesArray = categoryBoxClickHandler(categoriesArray,element);
+        filterProducts(categoriesArray);
+    });
+
+    $(document).on("mouseenter", ".category-text-container", function() {
+        $(this).prev(".category-box").addClass("category-box-clicked");
+      });
+    
+      $(document).on("mouseleave", ".category-text-container", function() {
+        $(this).prev(".category-box").removeClass("category-box-clicked");
+      });
   });
+
+  function categoryBoxClickHandler(categoriesArray, element){
+    let category = element.attr('data-category');
+    if (typeof category === "string" && category!== '') {
+        let index = categoriesArray.indexOf(category);
+        // Si la categoría no está en el array, la agregamos
+        if (index === -1) {
+            categoriesArray.push(category);
+            element.addClass('category-box-clicked');
+        } else {
+            categoriesArray.splice(index, 1);
+            element.removeClass('category-box-clicked');
+        }
+    }
+    return categoriesArray;
+  }
 
   function filterProducts(innerCategoriesArray){
     $('.product-box').each(function() {

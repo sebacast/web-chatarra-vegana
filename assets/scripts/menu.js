@@ -22,34 +22,14 @@ $(function() {
     }
   });
 
-  $(document).on("click", "#go-up-button", function (e) {
-    e.preventDefault();
-    $("html, body").animate({scrollTop: -60},1000);
-  });
-
 });
 
-//función para mostrar/ocultar elementos del menu (busca por clase -> .menu-item)
-// function hideShowMenuItems() {
-//   let menuItems = $('.menu-item');
-//   menuItems.each(function() {
-//     $(this).show();
-//     if (!$(this).is(':visible')) {
-//       $(this).show();
-//     } else {
-//       $(this).hide();
-//     }
-//   });
-// }
-
-function hideShowMenuItems(){
-  let menuItems = document.querySelectorAll(".menu-item");
-  menuItems.forEach((item) => {
-    if(!item.style.display || item.style.display == "none"){
-        item.style.display = "block"; 
-    }
-    else{
-        item.style.display = "none"; 
+function hideShowMenuItems() {
+  $(".menu-item").each(function() {
+    if (!$(this).css("display") || $(this).css("display") === "none") {
+      $(this).css("display", "block");
+    } else {
+      $(this).css("display", "none");
     }
   });
 }

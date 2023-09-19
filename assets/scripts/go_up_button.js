@@ -1,7 +1,7 @@
 $(function() {
     var scrollButton = $("#go-up-button");  
     $(window).on("scroll", function() {
-        scrollButton.toggle($(this).scrollTop() > 61);
+        scrollButton.toggle($(this).scrollTop() > 60);
     });
     
     scrollButton.on("click", function() {

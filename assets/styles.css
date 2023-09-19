@@ -128,10 +128,30 @@ svg.bi.bi-arrow-up-circle-fill {
     width: 457px;
     margin: 5px;
 }
-.new-box{
-    width: 970px;
+.news-box {
+    width: 760px;
     margin: auto auto 30px auto;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
 }
+.news-paragraph-container p{
+    color: black;
+    font-size: 14px;
+    margin: 5px 0;
+}
+.news-heading h3{
+    color: black;
+}
+
+
+.news-heading p {
+    font-size: 12px;
+    color: black;
+    margin: 5px 0;  
+}
+
 #sobre-nosotros {
     padding: 5px 25px 15px 25px;
 }

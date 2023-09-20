@@ -1,7 +1,15 @@
+$(function () {
+  $(document).on("click", ".dot", function (e) {
+    e.preventDefault();
+    let index = $('.dot').index(this);
+    currentSlide(index);
+  });
+});
+
 let slideIndex = 0;
 showSlides();
 
-function showSlides() {
+function showSlides(clicked = false) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
@@ -15,5 +23,12 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 5000); 
+  if(!clicked){
+    setTimeout(showSlides, 5000); 
+  }
+}
+
+function currentSlide(n) {
+  slideIndex = n
+  showSlides(true);
 }

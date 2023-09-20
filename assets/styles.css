@@ -128,6 +128,9 @@ svg.bi.bi-arrow-up-circle-fill {
     width: 457px;
     margin: 5px;
 }
+.product-box-inner-content{
+    background-color: rgba(0, 0, 0, 0.5);
+}
 .news-box {
     width: 745px;
     margin: auto auto 30px auto;
@@ -249,7 +252,12 @@ svg.bi.bi-arrow-up-circle-fill {
 .category-text-container{
     text-align: center;
     position: relative;
-    bottom: 180px;
+    bottom: 43px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    display: block;
+    padding: 8px;
 }
 #nav-menu-sticky{
     position: fixed;
@@ -273,7 +281,7 @@ svg.bi.bi-arrow-up-circle-fill {
 
 /* background images */
 #salty{
-    background-image: url(img/hamburger.jpg);
+    background-image: url(img/hamburger-2.jpg);
     background-size: cover;
 }
 #sweet{

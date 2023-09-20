@@ -129,12 +129,12 @@ svg.bi.bi-arrow-up-circle-fill {
     margin: 5px;
 }
 .news-box {
-    width: 760px;
+    width: 745px;
     margin: auto auto 30px auto;
     background-color: #f7f7f7;
     border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px;
+    border-radius: 25px;
+    padding: 30px;
 }
 .news-paragraph-container p{
     color: black;
@@ -256,6 +256,20 @@ svg.bi.bi-arrow-up-circle-fill {
     z-index: 1000;
     margin-top: -60px;
 }
+.inner-promo-slider-container h3 {
+    position: relative;
+    top: 72px;
+    color: black;
+    font-size: xxx-large;
+    text-align: center;
+}
+.inner-promo-slider-container p {
+    position: relative;
+    top: 115px;
+    color: black;
+    font-size: x-large;
+    text-align: center;
+}
 
 /* background images */
 #salty{
@@ -274,6 +288,26 @@ svg.bi.bi-arrow-up-circle-fill {
 
 #veggie-burger{
     background-image: url(img/veggie-burger.jpg);
+    background-size: cover;
+}
+#veggie-fries{
+    background-image: url(img/papas-con.chedar.jpg);
+    background-size: cover;
+}
+#oreo-cake{
+    background-image: url(img/oreo-cake.jpg);
+    background-size: cover;
+}
+#choco-veggie{
+    background-image: url(img/choco-veggie-cake.jpg);
+    background-size: cover;
+}
+#butterbeer{
+    background-image: url(img/butterbeer.jpg);
+    background-size: cover;
+}
+#juice{
+    background-image: url(img/orange-juice-2.jpg);
     background-size: cover;
 }
 /* background images */
@@ -345,6 +379,10 @@ svg.bi.bi-arrow-up-circle-fill {
 .text-center{
     text-align: center;
 }
+.font-weight-600{
+    font-weight: 600;
+}
+
 /*  element styles  */
 
 /* 
